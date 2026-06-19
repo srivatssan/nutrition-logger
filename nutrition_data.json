@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "version": "1.0",
+    "title": "Sri's Nutrition Reference",
+    "footerLeft": "SRI · NUTRITION REFERENCE · V1.0",
+    "footerRight": "Bars scaled to daily targets — 300 kcal / 100 g protein / 40 g fiber"
+  },
+
+  "header": {
+    "eyebrow": "Personal Reference · v1.0",
+    "titleLine1": "What I eat,",
+    "titleLine2": "and why.",
+    "description": "A working reference for daily food decisions — built around the long-term goals of weight loss, fatty liver improvement, and a sustained 100g+ protein, 40g+ fiber baseline."
+  },
+
+  "dailyTargets": [
+    { "name": "Protein",    "value": "100 – 150 g",   "tone": "pro"   },
+    { "name": "Fiber",      "value": "40 – 50 g",     "tone": "fib"   },
+    { "name": "Water",      "value": "3 – 4 L",       "tone": "water" },
+    { "name": "Vegetables", "value": "5+ servings",   "tone": ""      },
+    { "name": "Fruit",      "value": "2 – 4 servings","tone": ""      },
+    { "name": "Legumes",    "value": "2 – 3 servings","tone": ""      }
+  ],
+
+  "goals": [
+    "Weight loss",
+    "Fatty liver improvement",
+    "Fissure & hemorrhoid support",
+    "High fiber (40g+)",
+    "High protein (100g+)",
+    "Long-term sustainability"
+  ],
+
+  "scales": {
+    "cal": 300,
+    "pro": 100,
+    "fib": 40
+  },
+
+  "sortOptions": [
+    { "key": "default",  "label": "Default"      },
+    { "key": "protein",  "label": "Protein ↓"    },
+    { "key": "fiber",    "label": "Fiber ↓"      },
+    { "key": "calories", "label": "Calories ↑"   }
+  ],
+
+  "freqLabels": {
+    "daily":      "Daily",
+    "weekly":     "Weekly",
+    "occasional": "Occasional"
+  },
+
+  "tabs": [
+    { "key": "veg", "num": "01", "label": "Vegetables"      },
+    { "key": "leg", "num": "02", "label": "Legumes & Nuts"  },
+    { "key": "fru", "num": "03", "label": "Fruits"          },
+    { "key": "sat", "num": "04", "label": "Sattu Maavu"     },
+    { "key": "pri", "num": "05", "label": "Priority Guide"  }
+  ],
+
+  "sections": {
+    "veg": {
+      "title": "The everyday",
+      "titleEm": "foundation.",
+      "intro": "Twenty-five vegetables, anchored by the daily-rotation greens and supported by 2–5x weekly options. Bars are scaled against daily targets — a bar half-full means that single serving contributes half the day's goal.",
+      "championLabels": {
+        "pro": "Highest-protein vegetables",
+        "fib": "Highest-fiber vegetables",
+        "cal": "Lowest-calorie picks"
+      },
+      "items": [
+        { "name": "Spinach",          "serving": "1 cup cooked",   "cal": 41,  "pro": 5.3, "fib": 4.3, "freq": "daily",      "champion": true  },
+        { "name": "Broccoli",         "serving": "1 cup",          "cal": 31,  "pro": 2.6, "fib": 2.4, "freq": "daily",      "champion": true  },
+        { "name": "Green Peas",       "serving": "1 cup",          "cal": 134, "pro": 8.6, "fib": 8.8, "freq": "daily",      "champion": true  },
+        { "name": "Green Beans",      "serving": "1 cup",          "cal": 44,  "pro": 2.4, "fib": 4.0, "freq": "daily",      "champion": true  },
+        { "name": "Avocado",          "serving": "½ fruit",        "cal": 160, "pro": 2.0, "fib": 6.7, "freq": "weekly",     "champion": true  },
+        { "name": "Drumstick Pods",   "serving": "1 cup",          "cal": 37,  "pro": 2.1, "fib": 4.8, "freq": "weekly",     "champion": true  },
+        { "name": "Fenugreek Leaves", "serving": "1 cup cooked",   "cal": 49,  "pro": 4.0, "fib": 4.0, "freq": "weekly",     "champion": true  },
+        { "name": "Drumstick Leaves", "serving": "1 cup cooked",   "cal": 64,  "pro": 5.0, "fib": 2.0, "freq": "weekly",     "champion": true  },
+        { "name": "Potato",           "serving": "1 medium",       "cal": 161, "pro": 4.3, "fib": 3.8, "freq": "weekly",     "champion": true  },
+        { "name": "Tomato",           "serving": "1 medium",       "cal": 22,  "pro": 1.1, "fib": 1.5, "freq": "daily",      "champion": true  },
+        { "name": "Cucumber",         "serving": "1 medium",       "cal": 30,  "pro": 1.3, "fib": 1.5, "freq": "daily",      "champion": true  },
+        { "name": "Lauki",            "serving": "1 cup cooked",   "cal": 21,  "pro": 0.8, "fib": 1.1, "freq": "daily",      "champion": true  },
+        { "name": "Onion",            "serving": "1 medium",       "cal": 44,  "pro": 1.2, "fib": 1.9, "freq": "daily"      },
+        { "name": "Shallots",         "serving": "50g",            "cal": 36,  "pro": 1.2, "fib": 1.7, "freq": "daily"      },
+        { "name": "Iceberg Lettuce",  "serving": "2 cups",         "cal": 16,  "pro": 1.0, "fib": 1.4, "freq": "daily"      },
+        { "name": "Carrot",           "serving": "1 medium",       "cal": 25,  "pro": 0.6, "fib": 1.7, "freq": "daily"      },
+        { "name": "Bell Pepper",      "serving": "1 medium",       "cal": 37,  "pro": 1.2, "fib": 2.5, "freq": "daily"      },
+        { "name": "Garlic",           "serving": "3 cloves",       "cal": 13,  "pro": 0.6, "fib": 0.6, "freq": "daily"      },
+        { "name": "Daikon Radish",    "serving": "1 cup",          "cal": 21,  "pro": 0.6, "fib": 1.9, "freq": "daily"      },
+        { "name": "Beetroot",         "serving": "1 cup cooked",   "cal": 58,  "pro": 2.2, "fib": 3.8, "freq": "weekly"     },
+        { "name": "Corn",             "serving": "1 ear",          "cal": 90,  "pro": 3.3, "fib": 2.7, "freq": "weekly"     },
+        { "name": "Eggplant",         "serving": "1 cup cooked",   "cal": 35,  "pro": 0.8, "fib": 2.5, "freq": "weekly"     },
+        { "name": "Tindora",          "serving": "1 cup cooked",   "cal": 52,  "pro": 1.6, "fib": 4.0, "freq": "weekly"     },
+        { "name": "Fresh Coconut",    "serving": "45g",            "cal": 160, "pro": 1.5, "fib": 4.5, "freq": "weekly"     },
+        { "name": "Jackfruit Seeds",  "serving": "½ cup boiled",   "cal": 95,  "pro": 3.8, "fib": 3.5, "freq": "weekly"     }
+      ]
+    },
+
+    "leg": {
+      "title": "The protein",
+      "titleEm": "engine room.",
+      "intro": "Dals, beans, and nuts do the heavy lifting for both protein and fiber simultaneously — uncommon among food groups. Masoor, moong, and chickpeas hit double-digits on both metrics from a single cup.",
+      "championLabels": {
+        "pro": "Protein leaders",
+        "fib": "Fiber leaders",
+        "cal": "Lightest options"
+      },
+      "items": [
+        { "name": "Masoor Dal",     "serving": "1 cup cooked", "cal": 230, "pro": 18.0, "fib": 15.5, "freq": "daily",  "champion": true },
+        { "name": "Moong Dal",      "serving": "1 cup cooked", "cal": 212, "pro": 14.0, "fib": 15.0, "freq": "daily",  "champion": true },
+        { "name": "Toor Dal",       "serving": "1 cup cooked", "cal": 198, "pro": 12.0, "fib": 15.0, "freq": "daily",  "champion": true },
+        { "name": "Urad Dal",       "serving": "1 cup cooked", "cal": 185, "pro": 13.0, "fib": 13.0, "freq": "daily",  "champion": true },
+        { "name": "Kidney Beans",   "serving": "1 cup cooked", "cal": 225, "pro": 15.0, "fib": 13.0, "freq": "weekly", "champion": true },
+        { "name": "Chickpeas",      "serving": "1 cup cooked", "cal": 269, "pro": 14.5, "fib": 12.5, "freq": "weekly", "champion": true },
+        { "name": "Almonds",        "serving": "28g",          "cal": 164, "pro": 6.0,  "fib": 3.5,  "freq": "weekly" },
+        { "name": "Pistachios",     "serving": "28g",          "cal": 159, "pro": 5.7,  "fib": 3.0,  "freq": "weekly" },
+        { "name": "Cashews",        "serving": "28g",          "cal": 157, "pro": 5.2,  "fib": 1.0,  "freq": "occasional" }
+      ]
+    },
+
+    "fru": {
+      "title": "Sweetness,",
+      "titleEm": "structured.",
+      "intro": "Tier 1 fruits — apple, guava, pear, kiwi, orange, berries — earn daily slots on the strength of their fiber-to-sugar ratio. Higher-glycemic fruits move to occasional use, not exclusion.",
+      "championLabels": {
+        "pro": "Highest-protein fruits",
+        "fib": "Highest-fiber fruits",
+        "cal": "Lightest fruits"
+      },
+      "items": [
+        { "name": "Guava",         "serving": "1 medium", "cal": 68,  "pro": 2.6, "fib": 5.4, "freq": "daily",      "champion": true },
+        { "name": "Pomegranate",   "serving": "1 fruit",  "cal": 144, "pro": 3.0, "fib": 7.0, "freq": "weekly",     "champion": true },
+        { "name": "Blackberries",  "serving": "1 cup",    "cal": 62,  "pro": 2.0, "fib": 7.6, "freq": "daily",      "champion": true },
+        { "name": "Bartlett Pear", "serving": "1 medium", "cal": 101, "pro": 0.6, "fib": 5.5, "freq": "daily",      "champion": true },
+        { "name": "Gala Apple",    "serving": "1 medium", "cal": 95,  "pro": 0.5, "fib": 4.4, "freq": "daily",      "champion": true },
+        { "name": "Kiwi",          "serving": "2 fruits", "cal": 84,  "pro": 1.6, "fib": 4.2, "freq": "daily",      "champion": true },
+        { "name": "Custard Apple", "serving": "1 fruit",  "cal": 120, "pro": 2.1, "fib": 4.4, "freq": "occasional", "champion": true },
+        { "name": "Orange",        "serving": "1 medium", "cal": 62,  "pro": 1.2, "fib": 3.1, "freq": "daily"      },
+        { "name": "Blueberries",   "serving": "1 cup",    "cal": 84,  "pro": 1.1, "fib": 3.6, "freq": "daily"      },
+        { "name": "Strawberries",  "serving": "1 cup",    "cal": 49,  "pro": 1.0, "fib": 3.0, "freq": "daily"      },
+        { "name": "Papaya",        "serving": "1 cup",    "cal": 62,  "pro": 0.7, "fib": 2.5, "freq": "weekly"     },
+        { "name": "Banana",        "serving": "1 medium", "cal": 105, "pro": 1.3, "fib": 3.1, "freq": "weekly"     },
+        { "name": "Red Banana",    "serving": "1 medium", "cal": 110, "pro": 1.5, "fib": 3.5, "freq": "weekly"     },
+        { "name": "Black Cherries","serving": "1 cup",    "cal": 97,  "pro": 1.6, "fib": 3.2, "freq": "weekly"     },
+        { "name": "Pineapple",     "serving": "1 cup",    "cal": 82,  "pro": 0.9, "fib": 2.3, "freq": "weekly"     },
+        { "name": "Fresh Plum",    "serving": "2 plums",  "cal": 60,  "pro": 0.9, "fib": 2.0, "freq": "weekly"     },
+        { "name": "Watermelon",    "serving": "2 cups",   "cal": 91,  "pro": 1.8, "fib": 1.2, "freq": "weekly"     },
+        { "name": "Mango",         "serving": "1 cup",    "cal": 100, "pro": 1.4, "fib": 2.5, "freq": "occasional" },
+        { "name": "Jackfruit",     "serving": "1 cup",    "cal": 155, "pro": 2.8, "fib": 2.5, "freq": "occasional" },
+        { "name": "Black Grapes",  "serving": "1 cup",    "cal": 104, "pro": 1.1, "fib": 1.4, "freq": "occasional" }
+      ]
+    },
+
+    "sat": {
+      "title": "The flour",
+      "titleEm": "blend.",
+      "intro": "Ingredient reference for building a custom Sattu Maavu mix. Values shown per 100g dry — useful for pre-blend ratio decisions. Soybean, urad, and groundnut anchor the protein side; barley and urad anchor fiber.",
+      "championLabels": {
+        "pro": "Protein leaders (per 100g)",
+        "fib": "Fiber leaders (per 100g)",
+        "cal": "Lightest ingredients"
+      },
+      "items": [
+        { "name": "Soybean",     "serving": "per 100g dry", "cal": 446, "pro": 36.0, "fib": 9.0,  "freq": "daily",  "champion": true },
+        { "name": "Black Urad",  "serving": "per 100g dry", "cal": 341, "pro": 25.0, "fib": 18.0, "freq": "daily",  "champion": true },
+        { "name": "Groundnut",   "serving": "per 100g dry", "cal": 585, "pro": 25.0, "fib": 8.0,  "freq": "weekly", "champion": true },
+        { "name": "Green Gram",  "serving": "per 100g dry", "cal": 347, "pro": 24.0, "fib": 16.0, "freq": "daily",  "champion": true },
+        { "name": "Cowpea",      "serving": "per 100g dry", "cal": 336, "pro": 24.0, "fib": 10.0, "freq": "daily",  "champion": true },
+        { "name": "Horse Gram",  "serving": "per 100g dry", "cal": 320, "pro": 22.0, "fib": 7.5,  "freq": "weekly", "champion": true },
+        { "name": "Fried Gram",  "serving": "per 100g dry", "cal": 369, "pro": 22.0, "fib": 10.0, "freq": "daily",  "champion": true },
+        { "name": "Almond",      "serving": "per 100g dry", "cal": 579, "pro": 21.0, "fib": 12.5, "freq": "weekly", "champion": true },
+        { "name": "Pistachio",   "serving": "per 100g dry", "cal": 560, "pro": 20.0, "fib": 10.0, "freq": "weekly" },
+        { "name": "Chickpeas",   "serving": "per 100g dry", "cal": 378, "pro": 20.0, "fib": 12.0, "freq": "daily"  },
+        { "name": "Cashew",      "serving": "per 100g dry", "cal": 553, "pro": 18.0, "fib": 3.0,  "freq": "occasional" },
+        { "name": "Oats",        "serving": "per 100g dry", "cal": 389, "pro": 17.0, "fib": 10.5, "freq": "daily"  },
+        { "name": "Wheat",       "serving": "per 100g dry", "cal": 340, "pro": 13.0, "fib": 12.0, "freq": "daily",  "champion": true },
+        { "name": "Barley",      "serving": "per 100g dry", "cal": 354, "pro": 12.5, "fib": 17.0, "freq": "daily",  "champion": true },
+        { "name": "Bajra",       "serving": "per 100g dry", "cal": 361, "pro": 11.0, "fib": 11.0, "freq": "daily",  "champion": true },
+        { "name": "White Corn",  "serving": "per 100g dry", "cal": 365, "pro": 9.0,  "fib": 7.0,  "freq": "weekly" },
+        { "name": "Brown Rice",  "serving": "per 100g dry", "cal": 370, "pro": 7.5,  "fib": 3.5,  "freq": "daily"  },
+        { "name": "Ragi",        "serving": "per 100g dry", "cal": 336, "pro": 7.3,  "fib": 11.0, "freq": "daily",  "champion": true },
+        { "name": "Sago",        "serving": "per 100g dry", "cal": 358, "pro": 0.2,  "fib": 1.0,  "freq": "occasional" }
+      ]
+    },
+
+    "pri": {
+      "title": "What to actually",
+      "titleEm": "eat this week.",
+      "intro": "A condensed decision tree that collapses the data above into three practical buckets — what should appear every day, what rotates through the week, and what stays occasional."
+    }
+  },
+
+  "priorityGuide": [
+    {
+      "title": "Eat",
+      "titleEm": "daily",
+      "freq": "Anchor the plate",
+      "groups": [
+        { "label": "Vegetables",   "items": ["Spinach", "Broccoli", "Tomatoes", "Cucumbers", "Green Beans"] },
+        { "label": "Legumes",      "items": ["Moong Dal", "Masoor Dal", "Toor Dal"] },
+        { "label": "Fruits",       "items": ["Apple", "Guava", "Pear", "Orange", "Kiwi"] },
+        { "label": "Protein adds", "items": ["Greek Yogurt", "Low-Fat Paneer", "Tofu", "Whey Protein"] }
+      ]
+    },
+    {
+      "title": "Rotate",
+      "titleEm": "weekly",
+      "freq": "Vary the week",
+      "groups": [
+        { "label": "", "items": ["Chickpeas", "Kidney Beans", "Horse Gram", "Fenugreek Leaves", "Drumstick Leaves", "Pomegranate", "Berries", "Avocado"] }
+      ]
+    },
+    {
+      "title": "Use",
+      "titleEm": "moderately",
+      "freq": "Occasional, not excluded",
+      "groups": [
+        { "label": "", "items": ["Mango", "Grapes", "Jackfruit", "Custard Apple", "Coconut", "Cashews", "Potatoes"] }
+      ]
+    },
+    {
+      "title": "Movement",
+      "titleEm": "weekly",
+      "freq": "The other half of the equation",
+      "groups": [
+        { "label": "Strength training", "items": ["2 – 4 sessions / week"] },
+        { "label": "Walking",           "items": ["Daily"] }
+      ]
+    }
+  ]
+}
