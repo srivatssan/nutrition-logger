@@ -1,0 +1,552 @@
+{
+  "version": "2.0",
+  "createdAt": "2026-06-10T10:29:09.727Z",
+  "updatedAt": "2026-06-19T01:47:44.022Z",
+  "activePersonId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+  "people": [
+    {
+      "id": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "name": "Sri",
+      "color": "#E8A03E",
+      "profile": {
+        "gender": "male",
+        "age": 39,
+        "heightCm": 178,
+        "activityLevel": "sedentary"
+      },
+      "targets": {
+        "cal": 2189,
+        "pro": 120,
+        "fib": 40
+      },
+      "weightSettings": {
+        "unit": "lbs",
+        "goal": 250
+      }
+    }
+  ],
+  "entries": [
+    {
+      "id": "62a9751f-7e80-4080-9c9a-97c825fd6b05",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-10T10:36:00.000Z",
+      "meal": "breakfast",
+      "food": "Fiber suppliment",
+      "cal": 0,
+      "pro": 0,
+      "fib": 6,
+      "notes": ""
+    },
+    {
+      "id": "aff9101f-e443-4b30-b410-52f5e3fbfe4b",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-10T10:38:00.000Z",
+      "meal": "breakfast",
+      "food": "Eight idlies plus 1 cup sambhar",
+      "cal": 740,
+      "pro": 26,
+      "fib": 18.3,
+      "notes": ""
+    },
+    {
+      "id": "e6f3ff82-f244-49b5-b1ed-33c855609c45",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-10T10:42:00.000Z",
+      "meal": "breakfast",
+      "food": "450g Guava",
+      "cal": 306,
+      "pro": 22,
+      "fib": 16.5,
+      "notes": ""
+    },
+    {
+      "id": "6ff63839-a683-45fd-912f-e85a6ed4590b",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-10T17:51:00.000Z",
+      "meal": "breakfast",
+      "food": "1 Cup cooked white rice, 1 cup boiled masoor dhal",
+      "cal": 430,
+      "pro": 22,
+      "fib": 16.5,
+      "notes": ""
+    },
+    {
+      "id": "08d69137-aebe-46a2-843e-f5efe22fb643",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-10T17:52:00.000Z",
+      "meal": "breakfast",
+      "food": "Water 3.9L",
+      "cal": 0,
+      "pro": 0,
+      "fib": 0,
+      "notes": ""
+    },
+    {
+      "id": "511b61eb-e6c4-46f1-86e6-4e31e57f9dc6",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-11T00:08:00.000Z",
+      "meal": "breakfast",
+      "food": "1 cup rice, 2 cups rasam plus 1 cup curd rice",
+      "cal": 593,
+      "pro": 22,
+      "fib": 12.3,
+      "notes": ""
+    },
+    {
+      "id": "55bb2a6c-4523-4d53-9db3-2835ee02a3b4",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-11T12:14:00.000Z",
+      "meal": "breakfast",
+      "food": "Coffee mug of sattu maavu kanji  3 heaped spoons sattu maavu 1 cup milk Water",
+      "cal": 315,
+      "pro": 14,
+      "fib": 5,
+      "notes": ""
+    },
+    {
+      "id": "f3520e31-ee6e-42eb-a4c0-b36896e7d727",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-11T13:32:00.000Z",
+      "meal": "snack",
+      "food": "1 cup Greek yogurt",
+      "cal": 120,
+      "pro": 20,
+      "fib": 0,
+      "notes": ""
+    },
+    {
+      "id": "18de0fc3-52a5-4f9b-b758-945ca1d512b9",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-11T16:33:00.000Z",
+      "meal": "lunch",
+      "food": "1 cup cooked Sona Masoori rice 1 cup leftover masoor rasam",
+      "cal": 275,
+      "pro": 10,
+      "fib": 6,
+      "notes": ""
+    },
+    {
+      "id": "435d19c4-cdab-46be-ac45-ec47c55ed3f6",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-11T23:12:00.000Z",
+      "meal": "dinner",
+      "food": "Pomeogranate airles",
+      "cal": 288,
+      "pro": 6,
+      "fib": 14,
+      "notes": ""
+    },
+    {
+      "id": "3f963f18-3635-4f80-a773-fa671b5b5d69",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-11T23:13:00.000Z",
+      "meal": "dinner",
+      "food": "Fiber",
+      "cal": 0,
+      "pro": 0,
+      "fib": 6,
+      "notes": ""
+    },
+    {
+      "id": "9dea97a3-3cc9-4702-a84e-35531cc96034",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-11T23:13:00.000Z",
+      "meal": "dinner",
+      "food": "Dinner",
+      "cal": 900,
+      "pro": 100,
+      "fib": 2,
+      "notes": ""
+    },
+    {
+      "id": "390e594e-4612-4e6d-acb6-1266409d692e",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-12T19:50:00.000Z",
+      "meal": "breakfast",
+      "food": "3 spoon sattu maavu, 1 cup greek yogurt, 3 kiwis , 2 tablespoon honey",
+      "cal": 500,
+      "pro": 30,
+      "fib": 12,
+      "notes": ""
+    },
+    {
+      "id": "14065d3f-f737-44a0-8843-12e669a269e9",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-12T19:52:00.000Z",
+      "meal": "lunch",
+      "food": "2 cups masoor dhal, 1/2 cup rasam, 1 cup boiled rice with half avacado",
+      "cal": 860,
+      "pro": 44,
+      "fib": 25,
+      "notes": ""
+    },
+    {
+      "id": "63c9f2bd-38ad-46b0-b5eb-0b21df758d65",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-12T19:54:00.000Z",
+      "meal": "snack",
+      "food": "30g protein drink",
+      "cal": 190,
+      "pro": 30,
+      "fib": 0,
+      "notes": ""
+    },
+    {
+      "id": "a12c904a-7e9b-4c0f-947f-89b52c7f80e4",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-12T21:02:00.000Z",
+      "meal": "dinner",
+      "food": "1 cup greek yogurt and 1 pear",
+      "cal": 250,
+      "pro": 23,
+      "fib": 6,
+      "notes": ""
+    },
+    {
+      "id": "1ee96f32-562f-4d49-a553-ffceee2f67c8",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-12T21:02:00.000Z",
+      "meal": "dinner",
+      "food": "Paneer paratta",
+      "cal": 550,
+      "pro": 23,
+      "fib": 5,
+      "notes": ""
+    },
+    {
+      "id": "a66307df-4bf7-4e95-a975-c706e3fe4f32",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-13T12:05:00.000Z",
+      "meal": "breakfast",
+      "food": "2 dosas and 2 cup toor dhal sambhar",
+      "cal": 550,
+      "pro": 22,
+      "fib": 10,
+      "notes": ""
+    },
+    {
+      "id": "22da359d-873a-41de-be53-6ef4c667fe17",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-13T15:00:00.000Z",
+      "meal": "snack",
+      "food": "1.5 cup Greek yogurt and 1 bartlett pear",
+      "cal": 300,
+      "pro": 32,
+      "fib": 6,
+      "notes": ""
+    },
+    {
+      "id": "55595890-eae5-4113-b09d-d7418bb48ea6",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-13T17:00:00.000Z",
+      "meal": "lunch",
+      "food": "Lunch Healthy choice",
+      "cal": 440,
+      "pro": 36,
+      "fib": 6,
+      "notes": ""
+    },
+    {
+      "id": "36c78b4d-a1d9-419c-9a2a-e60b961cca77",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-13T20:00:00.000Z",
+      "meal": "snack",
+      "food": "1 cup pomogranate seeds and half yellow dragon fruit",
+      "cal": 150,
+      "pro": 2,
+      "fib": 8,
+      "notes": ""
+    },
+    {
+      "id": "f491d607-f95d-494d-a73c-5e0904063882",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-16T01:28:00.000Z",
+      "meal": "breakfast",
+      "food": "Sattu kanji",
+      "cal": 350,
+      "pro": 14,
+      "fib": 4,
+      "notes": ""
+    },
+    {
+      "id": "b8f88df9-8468-4537-89f6-91e8e5c39bef",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-16T01:29:00.000Z",
+      "meal": "lunch",
+      "food": "2 cups boiled rice, 3 cups sambhar, 2 cups beetroot",
+      "cal": 1080,
+      "pro": 31,
+      "fib": 22.5,
+      "notes": ""
+    },
+    {
+      "id": "e34f54a1-78df-47db-af3d-999dc6a8e9ba",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-16T01:30:00.000Z",
+      "meal": "dinner",
+      "food": "Smoothie with berries and orgain protein powder",
+      "cal": 375,
+      "pro": 47,
+      "fib": 12,
+      "notes": ""
+    },
+    {
+      "id": "398a2f25-bd91-4e3a-8e4d-a0cc38eec2e8",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-16T01:31:00.000Z",
+      "meal": "dinner",
+      "food": "Fiber Supplement",
+      "cal": 0,
+      "pro": 0,
+      "fib": 6,
+      "notes": ""
+    },
+    {
+      "id": "a027a8c1-a85e-4f6b-a7b4-40aef20b5469",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-16T01:31:00.000Z",
+      "meal": "lunch",
+      "food": "Appalams",
+      "cal": 180,
+      "pro": 5,
+      "fib": 2,
+      "notes": ""
+    },
+    {
+      "id": "0ee4f774-fa2d-4692-a6e7-aede5595419c",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-16T12:22:00.000Z",
+      "meal": "breakfast",
+      "food": "Yogurt SMoothie",
+      "cal": 350,
+      "pro": 45,
+      "fib": 13,
+      "notes": ""
+    },
+    {
+      "id": "50ad9ae9-14e3-4604-98f8-10891d80de4f",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-16T12:25:00.000Z",
+      "meal": "snack",
+      "food": "2 kiwis",
+      "cal": 95,
+      "pro": 2,
+      "fib": 6,
+      "notes": ""
+    },
+    {
+      "id": "319fc15c-4592-4191-a81a-e984d50e757c",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-16T12:26:00.000Z",
+      "meal": "snack",
+      "food": "one orange",
+      "cal": 80,
+      "pro": 1,
+      "fib": 4,
+      "notes": ""
+    },
+    {
+      "id": "674079ea-89cc-47fa-8403-eef1e93418c9",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-16T12:28:00.000Z",
+      "meal": "snack",
+      "food": "1 cup pomogranate",
+      "cal": 145,
+      "pro": 3,
+      "fib": 7,
+      "notes": ""
+    },
+    {
+      "id": "03b74e3b-b558-4d50-9c38-bac583db1543",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-16T12:29:00.000Z",
+      "meal": "dinner",
+      "food": "1 cup sambhar and 2 cups beetroot subji",
+      "cal": 400,
+      "pro": 13,
+      "fib": 10,
+      "notes": ""
+    },
+    {
+      "id": "4801febb-b718-4bf5-98d1-473bda25395e",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-16T12:31:00.000Z",
+      "meal": "lunch",
+      "food": "1 cup curd and 2 cups sambhar",
+      "cal": 420,
+      "pro": 22,
+      "fib": 8,
+      "notes": ""
+    },
+    {
+      "id": "149a3e12-b834-4903-a8fb-ed2f68f25704",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-16T12:31:00.000Z",
+      "meal": "snack",
+      "food": "Protein milk",
+      "cal": 190,
+      "pro": 30,
+      "fib": 0,
+      "notes": ""
+    },
+    {
+      "id": "92c377a2-6f9f-49b1-b7ee-8111e1f38388",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-16T12:32:00.000Z",
+      "meal": "snack",
+      "food": "Protein milk",
+      "cal": 190,
+      "pro": 30,
+      "fib": 0,
+      "notes": ""
+    },
+    {
+      "id": "f2aecb69-b4f3-4228-bfc5-a70072f6aeb9",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-17T12:32:00.000Z",
+      "meal": "breakfast",
+      "food": "Smoothie and 1.5 cups greek yogurt",
+      "cal": 470,
+      "pro": 60,
+      "fib": 13,
+      "notes": ""
+    },
+    {
+      "id": "431c9745-a2a5-4b74-96bf-014171b1aabe",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-17T12:33:00.000Z",
+      "meal": "snack",
+      "food": "1 cup Pomogranate",
+      "cal": 145,
+      "pro": 3,
+      "fib": 7,
+      "notes": ""
+    },
+    {
+      "id": "a0d0795d-06a3-46b0-8cdf-23b76985a383",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-17T15:12:00.000Z",
+      "meal": "snack",
+      "food": "1 orange",
+      "cal": 80,
+      "pro": 1,
+      "fib": 4,
+      "notes": ""
+    },
+    {
+      "id": "f952b164-4b48-447a-9270-bd9b33c4737d",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-17T15:37:00.000Z",
+      "meal": "lunch",
+      "food": "3 cups of sambhar and white rice and half a cup of yogurt",
+      "cal": 840,
+      "pro": 33,
+      "fib": 18,
+      "notes": ""
+    },
+    {
+      "id": "3ddac613-e13d-4d62-a2e4-a917f79e0692",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-17T18:46:00.000Z",
+      "meal": "snack",
+      "food": "Protein milk",
+      "cal": 190,
+      "pro": 30,
+      "fib": 0,
+      "notes": ""
+    },
+    {
+      "id": "6e2bb053-6bd9-4f19-853c-31ce3f09ca89",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-18T12:47:00.000Z",
+      "meal": "breakfast",
+      "food": "Smoothie",
+      "cal": 470,
+      "pro": 60,
+      "fib": 13,
+      "notes": ""
+    },
+    {
+      "id": "cb6bedbf-a1ca-41c4-8217-74f19944d951",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-18T12:47:00.000Z",
+      "meal": "snack",
+      "food": "1 Orange",
+      "cal": 80,
+      "pro": 1,
+      "fib": 4,
+      "notes": ""
+    },
+    {
+      "id": "ed2ccb63-eadc-4165-8da1-ec82b913bda8",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-18T13:39:00.000Z",
+      "meal": "lunch",
+      "food": "Rajma bowl",
+      "cal": 610,
+      "pro": 37,
+      "fib": 22,
+      "notes": ""
+    },
+    {
+      "id": "13d2d6b7-9907-40bb-805d-38d0d40c1f88",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-18T18:18:00.000Z",
+      "meal": "lunch",
+      "food": "half a bar of herseys milk chocolate",
+      "cal": 110,
+      "pro": 1,
+      "fib": 6,
+      "notes": ""
+    },
+    {
+      "id": "5221673d-a804-404a-9065-4e0b65d46d3f",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-18T18:22:00.000Z",
+      "meal": "snack",
+      "food": "One Pear",
+      "cal": 105,
+      "pro": 0.6,
+      "fib": 6,
+      "notes": ""
+    },
+    {
+      "id": "5327f547-0139-4555-ae7d-7d0706d5707d",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-19T00:18:00.000Z",
+      "meal": "snack",
+      "food": "Lean body protein",
+      "cal": 270,
+      "pro": 40,
+      "fib": 0,
+      "notes": ""
+    },
+    {
+      "id": "eae5d7e1-b556-4235-ba52-a14c8517f377",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-19T00:26:00.000Z",
+      "meal": "dinner",
+      "food": "Heavy Protein - Fried tofu",
+      "cal": 515,
+      "pro": 80,
+      "fib": 0,
+      "notes": ""
+    }
+  ],
+  "weights": [
+    {
+      "id": "663ee610-0ac1-45ea-9d3c-f11cc2d7cf9e",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-18T00:44:00.000Z",
+      "value": 299.8,
+      "notes": "Weight with full lunch and 2 litres water, breakfast"
+    },
+    {
+      "id": "9bed94f7-3a80-4b90-b1d1-d314237beb58",
+      "personId": "c3b9450c-4006-4fc6-b02a-c6c10927a59f",
+      "timestamp": "2026-06-18T10:47:00.000Z",
+      "value": 289,
+      "notes": "Morning after bowel movement"
+    }
+  ]
+}
