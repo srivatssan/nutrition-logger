@@ -104,7 +104,7 @@ The logger reads `nutrition_data.json` for meal-name autocomplete — typing "sp
   "people": [
     {
       "id": "...",
-      "name": "Sri",
+      "name": "Person 01",
       "color": "#E8A03E",
       "profile": {
         "gender": "male",
@@ -216,7 +216,7 @@ The log file is portable JSON — take it with you, version-control it, edit it 
 
 A few defaults you'll want to change before personal use:
 
-- **Default person name** is hardcoded as `'Sri'` in the migration and `emptyLog()` helpers — search `'Sri'` in `nutrition_logger.html` and replace
+- **Default person name** is hardcoded as `'Person 01'` in the migration and `emptyLog()` helpers — search `'Sri'` in `nutrition_logger.html` and replace
 - **Default targets** are `{ cal: 2000, pro: 100, fib: 40 }` in the `DEFAULT_TARGETS` constant
 - **Default activity level** is `moderate`
 - **Color palette** for people (`PERSON_COLORS`) holds 8 colors; new people cycle through them
