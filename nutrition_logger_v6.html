@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri's Nutrition Logger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="nutrition_logger.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <div class="eyebrow">Daily Logger · v6.0</div>
+      <h1>Today, <em>tracked.</em></h1>
+      <div class="today-date" id="today-date"></div>
+    </div>
+    <div class="rings-row" id="rings"></div>
+  </header>
+
+  <!-- STORAGE STATUS BAND -->
+  <div class="storage-band">
+    <span class="status-dot"></span>
+    <span id="storage-status">Auto-saving to browser storage</span>
+    <div class="actions">
+      <button class="btn" id="btn-connect">⏷ Open log file</button>
+      <button class="btn" id="btn-export">↓ Export JSON</button>
+      <button class="btn" id="btn-import">↑ Import JSON</button>
+      <button class="btn danger" id="btn-clear">Clear active</button>
+    </div>
+  </div>
+
+  <!-- PERSON SELECTOR -->
+  <div class="person-band">
+    <span class="person-label">Logging for</span>
+    <div class="person-select-wrap">
+      <span class="person-dot" id="person-dot"></span>
+      <select class="person-select" id="person-select"></select>
+    </div>
+    <div class="person-actions">
+      <button class="btn" id="btn-add-person">+ Add person</button>
+      <button class="btn danger" id="btn-remove-person">– Remove</button>
+    </div>
+  </div>
+
+  <!-- TARGETS EDITOR -->
+  <div class="targets-edit">
+    <div class="te-label">Daily targets</div>
+    <div class="te-field"><label>kcal</label><input type="number" id="tgt-cal" min="0" step="50"></div>
+    <div class="te-field"><label>protein</label><input type="number" id="tgt-pro" min="0" step="5"></div>
+    <div class="te-field"><label>fiber</label><input type="number" id="tgt-fib" min="0" step="5"></div>
+  </div>
+
+  <!-- ENTRY FORM -->
+  <form class="entry-form" id="entry-form" autocomplete="off">
+    <div class="form-title">Log <em>a meal</em></div>
+    <div class="form-subtitle" id="form-subtitle">All fields required · macros auto-fill from your reference if available</div>
+
+    <div class="form-grid">
+      <div class="field">
+        <label>When</label>
+        <input type="datetime-local" id="f-time" required>
+      </div>
+      <div class="field">
+        <label>Meal</label>
+        <select id="f-meal" required>
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <option value="snack">Snack</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="field has-suggestions" id="food-field">
+        <label>Food</label>
+        <input type="text" id="f-food" placeholder="e.g. Spinach, Greek yogurt…" required>
+        <div class="autocomplete" id="autocomplete"></div>
+      </div>
+    </div>
+
+    <div class="form-grid-2">
+      <div class="field">
+        <label>Calories</label>
+        <input type="number" id="f-cal" min="0" step="1" required>
+      </div>
+      <div class="field">
+        <label>Protein (g)</label>
+        <input type="number" id="f-pro" min="0" step="0.1" required>
+      </div>
+      <div class="field">
+        <label>Fiber (g)</label>
+        <input type="number" id="f-fib" min="0" step="0.1" required>
+      </div>
+      <button type="submit" class="submit-btn">+ Add entry</button>
+    </div>
+  </form>
+
+  <!-- TABS -->
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-tab="today"><span class="num">01</span>Today</button>
+    <button class="tab" data-tab="week"><span class="num">02</span>This week</button>
+    <button class="tab" data-tab="month"><span class="num">03</span>This month</button>
+    <button class="tab" data-tab="plan"><span class="num">04</span>Plan</button>
+    <button class="tab" data-tab="insights"><span class="num">05</span>Insights</button>
+    <button class="tab" data-tab="weight"><span class="num">06</span>Weight</button>
+    <button class="tab" data-tab="exercise"><span class="num">07</span>Exercise</button>
+    <button class="tab" data-tab="all"><span class="num">08</span>Entries</button>
+    <button class="tab" data-tab="family"><span class="num">09</span>Family</button>
+  </nav>
+
+  <!-- TODAY -->
+  <section class="panel active" id="panel-today">
+    <div class="panel-intro">
+      <h2 id="today-title">Today's <em>intake</em></h2>
+      <div class="nav-controls">
+        <button class="btn" id="day-prev">← Prev day</button>
+        <button class="btn" id="day-today">Today</button>
+        <button class="btn" id="day-next">Next day →</button>
+      </div>
+    </div>
+    <div class="day-summary" id="day-summary"></div>
+    <div id="day-deficit"></div>
+    <div id="day-celebration"></div>
+    <div id="day-meals"></div>
+  </section>
+
+  <!-- WEEK -->
+  <section class="panel" id="panel-week">
+    <div class="panel-intro">
+      <h2 id="week-title">This <em>week</em></h2>
+      <div class="nav-controls">
+        <button class="btn" id="week-prev">← Prev week</button>
+        <button class="btn" id="week-this">This week</button>
+        <button class="btn" id="week-next">Next week →</button>
+      </div>
+    </div>
+    <div id="week-content"></div>
+  </section>
+
+  <!-- MONTH -->
+  <section class="panel" id="panel-month">
+    <div class="panel-intro">
+      <h2 id="month-title">This <em>month</em></h2>
+      <div class="nav-controls">
+        <button class="btn" id="month-prev">← Prev month</button>
+        <button class="btn" id="month-this">This month</button>
+        <button class="btn" id="month-next">Next month →</button>
+      </div>
+    </div>
+    <div id="month-content"></div>
+  </section>
+
+  <!-- PLAN: BMR / TDEE calculator -->
+  <section class="panel" id="panel-plan">
+    <div class="panel-intro">
+      <h2>Calorie <em>plan.</em></h2>
+    </div>
+
+    <form class="entry-form" id="plan-form" autocomplete="off">
+      <div class="form-title">Profile &amp; <em>activity</em></div>
+      <div class="form-subtitle" id="plan-subtitle">Enter your stats to compute BMR (Mifflin–St Jeor) and TDEE · weight pulls from your latest log</div>
+
+      <div class="plan-grid">
+        <div class="field">
+          <label>Gender</label>
+          <select id="pf-gender">
+            <option value="">— pick —</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Age</label>
+          <input type="number" id="pf-age" min="1" max="120" step="1">
+        </div>
+        <div class="field">
+          <label>Height (cm)</label>
+          <input type="number" id="pf-height-cm" min="50" max="250" step="0.5" placeholder="e.g. 175">
+        </div>
+        <div class="field">
+          <label>… or feet</label>
+          <input type="number" id="pf-height-ft" min="0" max="8" step="1" placeholder="ft">
+        </div>
+        <div class="field">
+          <label>+ inches</label>
+          <input type="number" id="pf-height-in" min="0" max="11.9" step="0.1" placeholder="in">
+        </div>
+        <div class="field">
+          <label>Activity level</label>
+          <select id="pf-activity">
+            <option value="sedentary">Sedentary — desk, little exercise</option>
+            <option value="light">Light — 1–3 workouts/wk</option>
+            <option value="moderate" selected>Moderate — 3–5 workouts/wk</option>
+            <option value="active">Active — 6–7 workouts/wk</option>
+            <option value="very_active">Very active — twice-daily / physical job</option>
+          </select>
+        </div>
+      </div>
+    </form>
+
+    <div id="plan-content"></div>
+  </section>
+
+  <!-- INSIGHTS: education on the math -->
+  <section class="panel" id="panel-insights">
+    <div class="panel-intro">
+      <h2>The <em>math</em>, explained.</h2>
+    </div>
+    <div id="insights-content"></div>
+  </section>
+
+  <!-- WEIGHT -->
+  <section class="panel" id="panel-weight">
+    <div class="panel-intro">
+      <h2>Weight, <em>tracked.</em></h2>
+      <div class="nav-controls" id="weight-period-controls">
+        <button class="btn period-btn" data-period="7">7 days</button>
+        <button class="btn period-btn active" data-period="30">30 days</button>
+        <button class="btn period-btn" data-period="90">90 days</button>
+        <button class="btn period-btn" data-period="all">All time</button>
+      </div>
+    </div>
+
+    <!-- Weight settings card: unit + goal -->
+    <div class="targets-edit" id="weight-settings">
+      <div class="te-label">Weight settings</div>
+      <div class="te-field unit-toggle">
+        <label>Unit</label>
+        <div class="unit-buttons">
+          <button class="unit-btn" data-unit="lbs">lbs</button>
+          <button class="unit-btn" data-unit="kg">kg</button>
+        </div>
+      </div>
+      <div class="te-field"><label>Goal</label><input type="number" id="wf-goal" min="0" step="0.1" placeholder="optional"></div>
+    </div>
+
+    <!-- Weight entry form -->
+    <form class="entry-form" id="weight-form" autocomplete="off">
+      <div class="form-title">Log <em>a weight</em></div>
+      <div class="form-subtitle">Track yourself · daily or every few days · same time of day works best</div>
+
+      <div class="form-grid-2">
+        <div class="field">
+          <label>When</label>
+          <input type="datetime-local" id="wf-time" required>
+        </div>
+        <div class="field">
+          <label>Weight (<span id="wf-unit-label">lbs</span>)</label>
+          <input type="number" id="wf-value" min="0" step="0.1" required>
+        </div>
+        <div class="field">
+          <label>Notes</label>
+          <input type="text" id="wf-notes" placeholder="optional · e.g. morning, fasted">
+        </div>
+        <button type="submit" class="submit-btn">+ Add weight</button>
+      </div>
+    </form>
+
+    <div id="weight-content"></div>
+  </section>
+
+  <!-- EXERCISE -->
+  <section class="panel" id="panel-exercise">
+    <div class="panel-intro">
+      <h2>Exercise, <em>logged.</em></h2>
+      <div class="nav-controls" id="exercise-period-controls">
+        <button class="btn period-btn" data-period="7">7 days</button>
+        <button class="btn period-btn active" data-period="30">30 days</button>
+        <button class="btn period-btn" data-period="90">90 days</button>
+        <button class="btn period-btn" data-period="all">All time</button>
+      </div>
+    </div>
+
+    <!-- Exercise entry form -->
+    <form class="entry-form" id="exercise-form" autocomplete="off">
+      <div class="form-title">Log <em>a session</em></div>
+      <div class="form-subtitle">Every session adds to your daily deficit · enter calories from your wearable, or use estimate</div>
+
+      <div class="form-grid-2">
+        <div class="field">
+          <label>When</label>
+          <input type="datetime-local" id="xf-time" required>
+        </div>
+        <div class="field" style="position: relative;">
+          <label>Activity</label>
+          <input type="text" id="xf-activity" placeholder="walking, running, weights..." required autocomplete="off">
+          <div class="suggest-list" id="xf-suggest" hidden></div>
+        </div>
+        <div class="field">
+          <label>Duration (min)</label>
+          <input type="number" id="xf-duration" min="1" step="1" required>
+        </div>
+        <div class="field">
+          <label>Calories burned</label>
+          <input type="number" id="xf-kcal" min="0" step="1" required>
+          <button type="button" class="estimate-btn" id="xf-estimate" title="Estimate from activity + duration + weight">⌁ estimate</button>
+        </div>
+        <div class="field">
+          <label>Notes</label>
+          <input type="text" id="xf-notes" placeholder="optional · e.g. brisk, treadmill, outdoor">
+        </div>
+        <button type="submit" class="submit-btn">+ Add session</button>
+      </div>
+    </form>
+
+    <div id="exercise-content"></div>
+  </section>
+
+  <!-- ALL ENTRIES -->
+  <section class="panel" id="panel-all">
+    <div class="panel-intro">
+      <h2>All <em>entries</em></h2>
+    </div>
+    <div id="all-content"></div>
+  </section>
+
+  <!-- FAMILY -->
+  <section class="panel" id="panel-family">
+    <div class="panel-intro">
+      <h2>Family <em>view.</em></h2>
+    </div>
+    <div id="family-content"></div>
+  </section>
+
+  <footer class="footer">
+    <div>SRI · NUTRITION LOGGER · V1.0</div>
+    <div id="data-source-info">localStorage</div>
+  </footer>
+</div>
+
+<!-- Hidden file input for import -->
+<input type="file" id="file-input" accept="application/json" style="display:none">
+
+<div class="toast" id="toast"></div>
+
+<script src="nutrition_logger.js" defer></script>
+</body>
+</html>
