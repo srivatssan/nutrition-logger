@@ -104,7 +104,7 @@ The logger reads `nutrition_data.json` for meal-name autocomplete — typing "sp
   "people": [
     {
       "id": "...",
-      "name": "Person 01",
+      "name": "Sri",
       "color": "#E8A03E",
       "profile": {
         "gender": "male",
@@ -214,12 +214,12 @@ The log file is portable JSON — take it with you, version-control it, edit it 
 
 ## Customization
 
-A few defaults you'll want to change before personal use:
+A few defaults you may want to change before personal use:
 
-- **Default person name** is hardcoded as `'Person 01'` in the migration and `emptyLog()` helpers — search `'Sri'` in `nutrition_logger.html` and replace
+- **Default person name** is `'Person 01'` — generic so it works for anyone forking. The app auto-generates `Person 02`, `Person 03`, etc. when you add more people. You can rename any person inline from the person band at the top of the screen.
 - **Default targets** are `{ cal: 2000, pro: 100, fib: 40 }` in the `DEFAULT_TARGETS` constant
 - **Default activity level** is `moderate`
-- **Color palette** for people (`PERSON_COLORS`) holds 8 colors; new people cycle through them
+- **Color palette** for people (`PERSON_COLORS`) holds 8 colors; new people cycle through them automatically
 
 All other settings (profile, targets, unit, goal) are editable in the UI per person.
 
